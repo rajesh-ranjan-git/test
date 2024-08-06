@@ -15,4 +15,4 @@ const CounterSlice = createSlice({
 
 export const { increment, decrement } = CounterSlice.actions;
 
-export default CounterReducer;
+export default CounterSlice.reducer;
