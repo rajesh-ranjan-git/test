@@ -1,4 +1,4 @@
-import { useCount } from "../Context/CountProvider";
+import { useCount } from "../Context/countProvider";
 
 const Counter = () => {
   const { count, countDispatch } = useCount();

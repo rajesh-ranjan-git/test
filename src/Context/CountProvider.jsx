@@ -1,10 +1,10 @@
 import { createContext, useContext, useReducer } from "react";
 import { countReducer } from "../Reducers/countReducer";
 
-const CountContext = createContext();
+const countContext = createContext();
 
 // Provider
-const CountProvider = ({ children }) => {
+const countProvider = ({ children }) => {
   const initialState = {
     count: 0,
   };
@@ -20,6 +20,6 @@ const CountProvider = ({ children }) => {
 
 // Consumer
 
-const useCount = () => useContext(CountContext);
+const useCount = () => useContext(countContext);
 
-export { useCount, CountProvider };
+export { useCount, countProvider };
